@@ -1,0 +1,17 @@
+{
+  "name": "graph-lb",
+  "version": "0.0.1",
+  "description": "nodejs load balancer for thegraph endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "apollo-fetch": "^0.7.0",
+    "axios": "^0.24.0",
+    "joi": "^17.4.2"
+  }
+}
