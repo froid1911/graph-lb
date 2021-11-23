@@ -7,7 +7,7 @@ const apollo = require('apollo-fetch');
 
 
 const subgraphs = {
-    'aavegotich-core-matic': {
+    'aavegotchi-core-matic': {
         current: "QmefYc7CDnV6VbJdsosSvPA8gUuaSe6KWuuNeraqpgvY7H",
         pending: null,
         servers: [false, false, false],
@@ -51,7 +51,7 @@ const init = async () => {
         method: 'GET',
         path: '/hash/{name}',
         handler: (request, h) => {
-            return subgraphs[request.params.name];
+            return subgraphs[`${request.params.name}`].current;
         }
     });
 
@@ -61,8 +61,9 @@ const init = async () => {
         handler: (request, h) => {
             const { payload } = request;
             if(payload.hash) {
-                subgraphs[request.params.name] = payload.hash;
+                subgraphs[`${request.params.name}`].pending = payload.hash;
             }
+            return true;
         }
     });
 
@@ -133,7 +134,6 @@ const checkSubgraphs = async () => {
                         subgraphs[subgraphNames[i]].pending = null;
                     } 
                 } else { // check current
-                    console.log(subgraphStatus);
                     if(!subgraphStatus.synced || subgraphStatus.health !== "healthy" || subgraphStatus.fatalError !== null || Math.abs(subgraphStatus.chains[0].chainHeadBlock.number - subgraphStatus.chains[0].latestBlock.number) > 10) {
                         // disable server
                         subgraphs[subgraphNames[i]].servers[j] = false;
