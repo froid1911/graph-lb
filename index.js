@@ -19,8 +19,6 @@ async function init(){
   // Performs a sync check on all graph instances on all servers.
   await subgraphs.syncCheck();
 
-  // const r = subgraphs.getByName('aavegotchi-core-matic').updateHash('QmefYc7CDnV6VbJdsosSvPA8gUuaSe6KWuuNeraqpgvY7H')
-
   // Start the webserver.
   await webserver();
 }
