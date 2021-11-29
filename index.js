@@ -18,6 +18,7 @@ async function init(){
 
   // Performs a sync check on all graph instances on all servers.
   await subgraphs.syncCheck();
+  setInterval(() => { subgraphs.syncCheck() }, 1000 * 15);
 
   // Start the webserver.
   await webserver();
