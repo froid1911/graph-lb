@@ -17,10 +17,12 @@ async function init(){
   await subgraphs.load();
 
   // This just logs latest stats on startup.
-  await subgraphs.getLatestHashes();
+  // await subgraphs.getLatestHashes();
 
   // Performs a sync check on all graph instances on all servers.
-  await subgraphs.syncCheck();
+  //await subgraphs.syncCheck();
+
+  // const r = subgraphs.getByName('aavegotchi-core-matic').updateHash('QmefYc7CDnV6VbJdsosSvPA8gUuaSe6KWuuNeraqpgvY7H')
 
   // Start the webserver.
   await webserver();

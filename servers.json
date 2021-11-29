@@ -2,7 +2,8 @@
   "0": {
     "redirectUrl": "http://157.90.182.138:8000",
     "indexUrl": "http://157.90.182.138:8030/graphql",
-    "active": false
+    "active": false,
+    "manuallyDisabled": true
   },
   "1": {
     "redirectUrl": "https://api.thegraph.com",
