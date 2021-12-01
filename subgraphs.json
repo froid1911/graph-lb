@@ -10,5 +10,11 @@
     "pending": null,
     "servers": [1],
     "last": 0
+  },
+  "aavegotchi-parcel-matic": {
+    "current": "QmNyzCvFax5YDxomzfqVY8tnAzd9A36oDvpsdftjJKhUC4",
+    "pending": null,
+    "servers": [1, 2],
+    "last": 0
   }
 }
