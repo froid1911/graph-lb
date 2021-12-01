@@ -1,0 +1,14 @@
+{
+  "aavegotchi-core-matic": {
+    "current": "QmefYc7CDnV6VbJdsosSvPA8gUuaSe6KWuuNeraqpgvY7H",
+    "pending": null,
+    "servers": [1, 2],
+    "last": 0
+  },
+  "aavegotchi-svg": {
+    "current": "QmX1fymAL8V6kjAAKux7hxUzAHyZ9Vfv5GS1i9tVwbu2ux",
+    "pending": null,
+    "servers": [1],
+    "last": 0
+  }
+}
