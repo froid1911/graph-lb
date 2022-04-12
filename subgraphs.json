@@ -1,20 +1,8 @@
 {
   "aavegotchi-core-matic": {
-    "current": "QmefYc7CDnV6VbJdsosSvPA8gUuaSe6KWuuNeraqpgvY7H",
+    "current": "QmPvYSrtxR1Yvj5S9MSu7SYrTFQGpj5CgNiVAdt7DYKjRh",
     "pending": null,
-    "servers": [1, 2],
-    "last": 0
-  },
-  "aavegotchi-svg": {
-    "current": "QmX1fymAL8V6kjAAKux7hxUzAHyZ9Vfv5GS1i9tVwbu2ux",
-    "pending": null,
-    "servers": [1],
-    "last": 0
-  },
-  "aavegotchi-parcel-matic": {
-    "current": "QmNyzCvFax5YDxomzfqVY8tnAzd9A36oDvpsdftjJKhUC4",
-    "pending": null,
-    "servers": [1],
+    "servers": [0,1],
     "last": 0
   }
 }

@@ -1,17 +1,12 @@
 {
   "0": {
-    "redirectUrl": "http://157.90.182.138:8000",
+    "redirectUrl": "https://graph-dev.aavegotchi.com/subgraphs/name/aavegotchi/aavegotchi-core-matic",
     "indexUrl": "http://157.90.182.138:8030/graphql",
-    "active": false
+    "active": true
   },
   "1": {
-    "redirectUrl": "https://api.thegraph.com",
-    "indexUrl": "https://api.thegraph.com/index-node/graphql",
-    "active": false
-  },
-  "2": {
-    "redirectUrl": "https://aavegotchi2.stakesquid-frens.gq",
-    "indexUrl": "https://aavegotchi-lb.stakesquid-frens.gq/graphql",
-    "active": false
+    "redirectUrl": "https://graph-prod.aavegotchi.com/subgraphs/name/aavegotchi/aavegotchi-core-matic",
+    "indexUrl": "http://157.90.180.94:8030/graphql",
+    "active": true
   }
 }
